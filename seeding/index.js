@@ -68,7 +68,7 @@ db.users.forEach(user => {
     db.users_stockedItems.push({
       id: casual.uuid,
       userId: user.id,
-      stockedItems: item.id,
+      itemId: item.id,
       updatedAt: casual.unix_time,
       createdAt: casual.unix_time
     })
