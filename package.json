@@ -1,0 +1,19 @@
+{
+  "name": "kiita-mock-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon index.js",
+    "seeding": "node seeding.js > Database.json"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "casual": "^1.5.19",
+    "json-server": "^0.12.2",
+    "nodemon": "^1.17.3"
+  }
+}
