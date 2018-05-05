@@ -7,6 +7,17 @@
     {
       "type": "node",
       "request": "launch",
+      "name": "Seeding",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": [
+        "run-script",
+        "seeding"
+      ],
+      "port": 9229
+    },
+    {
+      "type": "node",
+      "request": "launch",
       "name": "Launch via NPM",
       "runtimeExecutable": "npm",
       "runtimeArgs": [
