@@ -6,7 +6,7 @@ module.exports = (userId = -1) => {
     title: casual.title,
     body: casual.sentences(100),
     exceprt: casual.short_description,
-    isPublished: casual.random_element([true, false]),
+    isPublished: casual.coin_flip,
     comments: [],
     userId,
     updatedAt: casual.unix_time,
