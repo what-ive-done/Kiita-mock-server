@@ -36,7 +36,16 @@ db.users.push({
   updatedAt: casual.unix_time,
   createdAt: casual.unix_time
 })
-
+db.users.push({
+  id: casual.uuid,
+  email: "pcjpcj2@gmail.com",
+  username: "changjoo-park",
+  password: "changjoo-park",
+  items: [],
+  comments: [],
+  updatedAt: casual.unix_time,
+  createdAt: casual.unix_time
+})
 timesDo(CountUsers, _ => db.users.push(casual.user))
 timesDo(CountComments, _ => db.comments.push(casual.comment))
 timesDo(CountTags, _ => db.tags.push(casual.tag))
