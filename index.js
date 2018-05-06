@@ -1,10 +1,16 @@
 const jsonServer = require('json-server')
+const jwt = require('jsonwebtoken')
 const server = jsonServer.create()
 const router = jsonServer.router('Database.json')
 const middlewares = jsonServer.defaults()
+const SECRET = 's3cr3t'
 
 server.use(middlewares)
-// Add Custom Routes
+// Auth
+server.use('/signin', (req, res, next) => {
+
+})
+// User/StockedItem Routes
 server.use('/users/:user_id/stocked/:item_id', (req, res, next) => {
   const userId = req.params['user_id']
   const itemId = req.params['item_id']

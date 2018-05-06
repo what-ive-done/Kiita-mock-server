@@ -13,3 +13,12 @@ GET  {{HOST}}/tags HTTP/1.1
 
 @itemId = 69370980-696d-4fef-980d-6a57ab809db4
 GET {{HOST}}/items/{{itemId}}?_embed=comments&_expand=user HTTP/1.1
+
+###
+# 로그인
+POST {{HOST}}/signin HTTP/1.1
+
+{
+  username: "Hello"
+  password: "World"
+}
